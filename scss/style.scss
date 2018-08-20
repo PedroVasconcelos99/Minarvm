@@ -1,0 +1,79 @@
+li{
+    list-style: none;
+}
+
+//estilos para o header
+header {
+    background-color:#A85883; 
+    .upper-header {
+        height: 122px;
+        display: flex;
+        align-items: center;
+        .col-sm-12{
+            display: flex;
+        }
+        button {
+            padding: 0px;
+            background: none;
+            border: none;
+            
+            svg{
+                width: 64px;
+                height: 64px;
+            }
+        }
+        .logo {
+            width: 100%;
+            text-align: center;
+            margin-top: 10px;
+            svg {
+                width: 340px;
+                height: 58.42px;
+            }
+        }
+    }
+    hr {
+        padding: 0;
+        margin: 0;
+    }
+
+    &.bg2{
+        background-color: orange;
+    }
+
+    &.bg3{
+        background-color: yellow;
+    }
+
+    .bottom-header {
+        height: 361px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        font-family: lato;
+        ul{
+            display: flex;
+            padding: 0;
+            li{
+                list-style: none;
+                font-size: 16px;
+                a {
+                    color: #fff;
+                }
+    
+            }
+        }
+        h2 {
+            font-size: 55px;
+            font-weight: 300;
+        }
+        p {
+            font-size: 20px;
+            width: 600px;
+            margin-top: 28.3px;
+            line-height: 34px;
+        }
+    }
+}
+
+//estilos para o footer

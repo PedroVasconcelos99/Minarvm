@@ -1,0 +1,73 @@
+li {
+  list-style: none;
+}
+
+header {
+  background-color: #A85883;
+}
+header .upper-header {
+  height: 122px;
+  display: flex;
+  align-items: center;
+}
+header .upper-header .col-sm-12 {
+  display: flex;
+}
+header .upper-header button {
+  padding: 0px;
+  background: none;
+  border: none;
+}
+header .upper-header button svg {
+  width: 64px;
+  height: 64px;
+}
+header .upper-header .logo {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+header .upper-header .logo svg {
+  width: 340px;
+  height: 58.42px;
+}
+header hr {
+  padding: 0;
+  margin: 0;
+}
+header.bg2 {
+  background-color: orange;
+}
+header.bg3 {
+  background-color: yellow;
+}
+header .bottom-header {
+  height: 361px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-family: lato;
+}
+header .bottom-header ul {
+  display: flex;
+  padding: 0;
+}
+header .bottom-header ul li {
+  list-style: none;
+  font-size: 16px;
+}
+header .bottom-header ul li a {
+  color: #fff;
+}
+header .bottom-header h2 {
+  font-size: 55px;
+  font-weight: 300;
+}
+header .bottom-header p {
+  font-size: 20px;
+  width: 600px;
+  margin-top: 28.3px;
+  line-height: 34px;
+}
+
+/*# sourceMappingURL=style.css.map */
