@@ -4,12 +4,12 @@
 
 //estilos para o header
 header {
-    background-color:#A85883; 
+    background-color: $bg1; 
     .upper-header {
         height: 122px;
         display: flex;
         align-items: center;
-        
+
         .upper-header-content {
             display: flex;
         }
@@ -39,11 +39,11 @@ header {
     }
 
     &.bg2{
-        background-color: orange;
+        background-color: $bg2;
     }
 
     &.bg3{
-        background-color: yellow;
+        background-color: $bg3;
     }
 
     .bottom-header {
@@ -51,15 +51,17 @@ header {
         color: #fff;
         display: flex;
         align-items: center;
-        font-family: lato;
+        font-family: 'Lato', sans-serif;
 
         .custom-breadcrumb {
             padding: 0;
             li{
+
                 list-style: none;
                 font-size: 16px;
                 display: inline;
                 margin-right: 10px;
+                text-transform: uppercase;
                 a {
                     color: #fff;
                 }
@@ -79,3 +81,60 @@ header {
 }
 
 //estilos para o footer
+footer{
+    margin-top: 50px;
+    margin-bottom: 30px; 
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        hr{
+            width: 100%;
+            border-color: #8E8E8E;
+            margin-top: 82px;
+            margin-bottom: 47px; 
+        }
+        .logo-footer{
+            svg{
+                width: 340px;
+                height: 58px;
+            }
+        }
+        .nav-footer {
+            margin-top: 61px;
+            ul{
+                margin: 0;
+                li {
+                    font-family: 'Lato', sans-serif;
+                    font-weight: 700;
+                    font-size: 30px;
+                    display: inline;
+                    margin-right: 30px;
+                    a {
+                        color: #929292;
+                        text-decoration: none;
+                    }
+                    a:hover {
+                        color: #555;
+                    }
+                }
+            }
+        }
+        .social-media {
+            li {
+                display: inline;
+                margin-right: 85px;
+                svg{
+                    width: 42px;
+                }
+                a {
+                    color: #929292;
+                    text-decoration: none;
+                }
+                a:hover {
+                    color: #555;
+                }
+                
+            }
+        }
+    }
+}
