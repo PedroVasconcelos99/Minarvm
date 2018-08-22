@@ -1,4 +1,10 @@
-li {
+/* Imports */
+.col-np {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.no-bullets li {
   list-style: none;
 }
 
@@ -10,7 +16,7 @@ header .upper-header {
   display: flex;
   align-items: center;
 }
-header .upper-header .col-sm-12 {
+header .upper-header .upper-header-content {
   display: flex;
 }
 header .upper-header button {
@@ -48,15 +54,16 @@ header .bottom-header {
   align-items: center;
   font-family: lato;
 }
-header .bottom-header ul {
-  display: flex;
+header .bottom-header .custom-breadcrumb {
   padding: 0;
 }
-header .bottom-header ul li {
+header .bottom-header .custom-breadcrumb li {
   list-style: none;
   font-size: 16px;
+  display: inline;
+  margin-right: 10px;
 }
-header .bottom-header ul li a {
+header .bottom-header .custom-breadcrumb li a {
   color: #fff;
 }
 header .bottom-header h2 {
@@ -65,8 +72,7 @@ header .bottom-header h2 {
 }
 header .bottom-header p {
   font-size: 20px;
-  width: 600px;
-  margin-top: 28.3px;
+  margin-top: 28px;
   line-height: 34px;
 }
 
