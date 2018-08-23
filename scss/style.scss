@@ -4,7 +4,7 @@
 
 //estilos para o header
 header {
-    background-color: $bg1; 
+  
     .upper-header {
         height: 90px;
         display: flex;
@@ -36,6 +36,11 @@ header {
     hr {
         padding: 0;
         margin: 0;
+    }
+    &.bg1{
+        background-color: $bg1; 
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     &.bg2{
