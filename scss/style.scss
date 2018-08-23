@@ -6,7 +6,7 @@
 header {
     background-color: $bg1; 
     .upper-header {
-        height: 122px;
+        height: 90px;
         display: flex;
         align-items: center;
 
@@ -19,8 +19,8 @@ header {
             border: none;
             
             svg{
-                width: 64px;
-                height: 64px;
+                width: 48px;
+                height: 48px;
             }
         }
         .logo {
@@ -28,8 +28,8 @@ header {
             text-align: center;
             margin-top: 10px;
             svg {
-                width: 340px;
-                height: 58.42px;
+                width: 220px;
+                height: auto;
             }
         }
     }
@@ -47,7 +47,7 @@ header {
     }
 
     .bottom-header {
-        height: 361px;
+        height: 270px;
         color: #fff;
         display: flex;
         align-items: center;
@@ -58,24 +58,28 @@ header {
             li{
 
                 list-style: none;
-                font-size: 16px;
+                font-size: .7rem;
                 display: inline;
                 margin-right: 10px;
                 text-transform: uppercase;
                 a {
                     color: #fff;
+                    &:after {
+                        content: "/";
+                        margin-left: 8px;
+                    }
                 }
     
             }
         }
         h2 {
-            font-size: 55px;
+            font-size: 3rem;
             font-weight: 300;
         }
         p {
-            font-size: 20px;
-            margin-top: 28px;
-            line-height: 34px;
+            font-size: 1rem;
+            margin-top: 22px;
+            line-height: 28px;
         }
     }
 }
@@ -83,32 +87,32 @@ header {
 //estilos para o footer
 footer{
     margin-top: 50px;
-    margin-bottom: 30px; 
+    margin-bottom: 50px; 
     .footer-content{
         display: flex;
         flex-direction: column;
         hr{
             width: 100%;
             border-color: #8E8E8E;
-            margin-top: 82px;
-            margin-bottom: 47px; 
+            margin-top: 70px;
+            margin-bottom: 32px; 
         }
         .logo-footer{
             svg{
-                width: 340px;
-                height: 58px;
+                width: 220px;
+                height: auto;
             }
         }
         .nav-footer {
-            margin-top: 61px;
+            margin-top: 48px;
             ul{
                 margin: 0;
                 li {
                     font-family: 'Lato', sans-serif;
                     font-weight: 700;
-                    font-size: 30px;
+                    font-size: 1.2rem;
                     display: inline;
-                    margin-right: 30px;
+                    margin-right: 1rem;
                     a {
                         color: #929292;
                         text-decoration: none;
@@ -122,9 +126,9 @@ footer{
         .social-media {
             li {
                 display: inline;
-                margin-right: 85px;
+                margin: 0 1.5rem;
                 svg{
-                    width: 42px;
+                    width: 2rem;
                 }
                 a {
                     color: #929292;
@@ -134,6 +138,40 @@ footer{
                     color: #555;
                 }
                 
+            }
+        }
+    }
+}
+
+//estilos para o centro da pagina
+.cidade{
+    margin: 100px 0;
+    font-family: 'Lato', sans-serif;
+    color: #707070;
+    h4 {
+        font-weight: 700;
+        font-size: 1.3rem;
+    }
+    .endereco {
+        margin-top: 28px;
+        ul {
+            line-height: 40px;
+            li {
+                font-size: 16px;
+                a {
+                    padding: 40px;
+                    color: inherit;
+                }
+                &:nth-child(1){
+                    font-weight: 700;
+                }
+                &:nth-child(4) {
+                    background-image: url(../images/icon-map-marker.svg);
+                    background-repeat: no-repeat;
+                    background-size: 24px;
+                    margin-top: 28px;
+                    
+                }
             }
         }
     }
