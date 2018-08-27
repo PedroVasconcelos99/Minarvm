@@ -1,0 +1,34 @@
+//estilos de componentes
+
+//botoes
+
+.btn {
+    border-radius: 200px;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    background-color: $bg2;
+    border: none;
+    
+    &:hover {
+        background-color: darken( $bg2, 10% );
+    }
+    &:active  {
+        background-color: darken( $bg2, 10% ) !important;
+    }
+    &:focus {
+        background-color: darken( $bg2, 10% ) !important;
+    }
+
+    &.bg1 {
+        background-color: $bg1;
+        &:hover {
+            background-color: darken( $bg1, 10% );
+        }
+    }
+    &.bg3 {
+        background-color: $bg3;
+        &:hover {
+            background-color: darken( $bg3, 10% );
+        }
+    }
+}

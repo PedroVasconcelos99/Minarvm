@@ -44,6 +44,35 @@ body, html {
   margin-bottom: 80px;
 }
 
+.btn {
+  border-radius: 200px;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  background-color: #CE4334;
+  border: none;
+}
+.btn:hover {
+  background-color: #a73528;
+}
+.btn:active {
+  background-color: #a73528 !important;
+}
+.btn:focus {
+  background-color: #a73528 !important;
+}
+.btn.bg1 {
+  background-color: #A85883;
+}
+.btn.bg1:hover {
+  background-color: #874669;
+}
+.btn.bg3 {
+  background-color: #50a10d;
+}
+.btn.bg3:hover {
+  background-color: #397209;
+}
+
 header .upper-header {
   height: 90px;
   display: flex;
@@ -81,6 +110,8 @@ header.bg1 {
 }
 header.bg2 {
   background-color: #CE4334;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 header.bg3 {
   background-color: #50a10d;
@@ -209,7 +240,7 @@ main .container {
   color: #707070;
 }
 main .container h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   font-weight: 300;
   line-height: 80px;
   margin-bottom: 25px;
@@ -219,7 +250,7 @@ main .container p {
   line-height: 32px;
   margin-bottom: 1rem;
 }
-main .container img {
+main .container .img-circle {
   width: 350px;
   height: 350px;
   display: block;

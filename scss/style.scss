@@ -1,6 +1,7 @@
 /* Imports */
 @import 'variables.scss';
 @import 'helpers.scss';
+@import 'components.scss';
 
 //estilos para o header
 header {
@@ -45,6 +46,8 @@ header {
 
     &.bg2{
         background-color: $bg2;
+        background-repeat: no-repeat;
+        background-position: right;
     }
 
     &.bg3{
@@ -187,7 +190,7 @@ main {
         font-family: 'Lato', sans-serif;
         color: #707070;
         h2 {
-            font-size: 3rem;
+            font-size: 2.8rem;
             font-weight: 300;
             line-height: 80px;
             margin-bottom: 25px;
@@ -197,7 +200,7 @@ main {
             line-height: 32px;
             margin-bottom: 1rem;
         }
-        img {
+        .img-circle {
             width: 350px;
             height: 350px;
             display: block;
@@ -206,6 +209,7 @@ main {
         article {
             margin:114px auto;
         }
+
     }
 
     .container-bottom {
