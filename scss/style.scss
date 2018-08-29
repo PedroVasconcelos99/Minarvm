@@ -239,7 +239,23 @@ main {
         }
 
     }
-
+    .more {
+        display: flex;
+        align-items: baseline;
+        a {
+            color: $bg2;
+            font-size: 1.2rem;
+            font-weight: 700;
+            background-image: url(../images/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: right;
+            padding-right: 65px;
+            &:hover {
+                color: darken( $bg2, 10% );
+                text-decoration: none;
+            }
+        }
+    }
 }
 // estilo para o boxed layout
 .boxed-container {
@@ -252,28 +268,64 @@ main {
             display: flex;
             align-items: center;
             justify-content: center;
+            background-repeat: no-repeat;
+            background-size: contain;
             h4 {
                 font-family: 'Lora', serif;
                 text-transform: uppercase;
                 font-size: 1.5rem;     
             }    
         }
-        h5 {
-            font-family: 'Lora', serif;
-            text-transform: uppercase;
-            text-align: center;
-            font-size: 1.2rem;
-            border-bottom: #fff solid 1px;
-        }
-        hr {
-            width: 15px;
-        }
-        p {
-            text-align: center;
-            
+       
+        
+        .col-p {
+            padding: 30px;
+            padding-bottom: 64px;
+            position: relative;
+            h5 {
+                font-family: 'Lora', serif;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 1.2rem;
+                padding-bottom: 15px;
+                margin-bottom: 40px;
+                border-bottom: #fff solid 1px;
+            }
+
+            p {
+                text-align: center;
+                line-height: 18px;
+            }
+            &.left {
+                &:after {
+                        height: 40px;
+                        width: 40px;
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        right: 265px;
+                        top: 130px;
+                        background-color: $bg2;
+                        transform: rotate(45deg);
+                    }
+                }
+                &.right {
+                    &:after {
+                        height: 40px;
+                        width: 40px;
+                        content: "";
+                        position: absolute;
+                        display: block;
+                        right: 265px;
+                        top: 130px;
+                        background-color: blue;
+                        transform: rotate(45deg);
+                }
+            }
         }
         .bg2 {
             background-color: $bg2;
         }
+       
     }
 }
