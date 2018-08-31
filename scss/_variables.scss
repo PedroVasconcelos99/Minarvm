@@ -13,3 +13,14 @@ $bg3: #50a10d;
 
 // resets
 
+// breakpoints
+$xs-min: 480px;
+$sm-min: 768px;
+$md-min: 992px;
+$lg-min: 1200px;
+
+$xs-max: $xs-min - 1px;
+$sm-max: $sm-min - 1px;
+$md-max: $md-min - 1px;
+$lg-max: $lg-min - 1px;
+
