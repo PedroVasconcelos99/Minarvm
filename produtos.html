@@ -93,6 +93,8 @@
                             <a href="#">Ver todos os produtos</a>
                         </div>
                     </div>
+
+                    <!-- Boxed content start -->
                     <div class="boxed-container mb-80">
                         <div class="row">
                             <div class="col-md-12 boxed-content">
@@ -128,8 +130,52 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Boxed content end -->
                    
             </div>
+
+            <section class="slider">
+                <div id=no-template-pager class="cycle-pager external">
+                    <a href="">slide 1</a>
+                    <a href="">slide 2</a>
+                    <a href="">slide 3</a>
+                </div>
+
+                <div class="container">
+
+                    <div class="cycle-slideshow row" 
+                        data-cycle-fx="scrollHorz" 
+                        data-cycle-timeout="0"
+                        data-cycle-slides="> div.slide"
+                        data-cycle-pager="#no-template-pager"
+                        data-cycle-pager-template=""
+                        >
+                        <div class="slide col-sm-12" style="background:#fcc">
+                            <div class="row">
+                                <div class="col-sm-8 col-md-6">
+                                    <h3>benefícios</h3>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+
+                                        Tetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget.
+                                    </p>
+                                    <a href="#" class="btn btn-primary bg2 mt-40 mb-20">Quero comprar</a>
+                                </div>
+                                <div class="col-sm-4 col-md-5 col-md-offset-1">
+                                    <img class="img-responsive" src="images/produto-2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slide col-sm-12" style="background:#cfc">
+                            <p>Lorem ipsum dolor 2...
+                        </div>
+                        <div class="slide col-sm-12" style="background:#ccf">
+                            <p>Lorem ipsum dolor 3...
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
         </main>
         <footer class="text-center">
             <div class="footer-content">
@@ -175,5 +221,7 @@
             </div>
         </footer>
     </div>
+    <script src="js/libs/jquery-3.3.1.min.js"></script>
+    <script src="js/libs/jquery.cycle2.min.js"></script>
 </body>
 </html>

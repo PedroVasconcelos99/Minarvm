@@ -379,6 +379,7 @@ main .more a:hover {
 }
 .boxed-container .boxed-content .left img, .boxed-container .boxed-content .right img {
   width: 100%;
+  height: 100%;
 }
 .boxed-container .boxed-content .left:after {
   left: -31px;
