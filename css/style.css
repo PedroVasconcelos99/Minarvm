@@ -240,7 +240,7 @@ footer .footer-content .social-media li a:hover {
   margin-top: 28px;
 }
 
-main .container {
+main {
   font-family: "Lato", sans-serif;
   color: #707070;
 }
@@ -400,6 +400,39 @@ main .more a:hover {
 }
 .boxed-container .boxed-content .boxed-text .bg-color {
   background: #CE4334;
+}
+
+.slider hr {
+  border-top: 3px solid #CE4334;
+  margin: 10px 0px;
+}
+.slider .cycle-pager {
+  text-align: center;
+}
+.slider .cycle-pager a {
+  margin-right: 1rem;
+  color: #707070;
+  text-transform: uppercase;
+}
+.slider .cycle-pager a:hover {
+  text-decoration: none;
+}
+.slider .cycle-pager a:focus {
+  text-decoration: none;
+}
+.slider .cycle-pager .cycle-pager-active {
+  color: #CE4334;
+}
+.slider .cycle-pager .cycle-pager-active:after {
+  height: 30px;
+  width: 30px;
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: #CE4334;
+  transform: rotate(45deg);
+  margin-top: -15px;
+  border-radius: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
