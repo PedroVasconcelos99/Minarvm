@@ -375,27 +375,37 @@ main {
             margin-right: 1rem;
             color: #707070;
             text-transform: uppercase;
+            position: relative;
+            &:after {
+                height: 15px;
+                width: 15px;
+                content: "";
+                position: absolute;
+                background-color: $bg2;
+                margin-top: -15px;
+                border-radius: 25px;
+                left: 50%;
+                margin-left: -7.5px;
+                bottom: -30px;
+                opacity: 0;
+                transition: all .3s ease-in-out;
+            }
             &:hover {
                 text-decoration: none;
+                &:after {
+                    bottom: -21px;
+                    opacity: 1;
+                }
             }
             &:focus {
                 text-decoration: none;
-
             }
-            
-        }
-        .cycle-pager-active {
-            color: $bg2;
-            &:after {
-                height: 30px;
-                width: 30px;
-                content: "";
-                position: absolute;
-                display: block;
-                background-color: $bg2;
-                transform: rotate(45deg);
-                margin-top: -15px;
-                border-radius: 25px;
+            &.cycle-pager-active {
+                color: $bg2;
+                &:after {
+                    bottom: -21px;
+                    opacity: 1;
+                }
             }
         }
     }

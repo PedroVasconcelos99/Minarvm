@@ -413,26 +413,38 @@ main .more a:hover {
   margin-right: 1rem;
   color: #707070;
   text-transform: uppercase;
+  position: relative;
+}
+.slider .cycle-pager a:after {
+  height: 15px;
+  width: 15px;
+  content: "";
+  position: absolute;
+  background-color: #CE4334;
+  margin-top: -15px;
+  border-radius: 25px;
+  left: 50%;
+  margin-left: -7.5px;
+  bottom: -30px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
 .slider .cycle-pager a:hover {
   text-decoration: none;
 }
+.slider .cycle-pager a:hover:after {
+  bottom: -21px;
+  opacity: 1;
+}
 .slider .cycle-pager a:focus {
   text-decoration: none;
 }
-.slider .cycle-pager .cycle-pager-active {
+.slider .cycle-pager a.cycle-pager-active {
   color: #CE4334;
 }
-.slider .cycle-pager .cycle-pager-active:after {
-  height: 30px;
-  width: 30px;
-  content: "";
-  position: absolute;
-  display: block;
-  background-color: #CE4334;
-  transform: rotate(45deg);
-  margin-top: -15px;
-  border-radius: 25px;
+.slider .cycle-pager a.cycle-pager-active:after {
+  bottom: -21px;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */
