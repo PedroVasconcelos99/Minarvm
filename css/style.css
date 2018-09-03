@@ -403,14 +403,17 @@ main .more a:hover {
 }
 
 .slider hr {
-  border-top: 3px solid #CE4334;
+  border-top: 2px solid #CE4334;
   margin: 10px 0px;
+}
+.slider h3 {
+  margin-top: 0;
 }
 .slider .cycle-pager {
   text-align: center;
 }
 .slider .cycle-pager a {
-  margin-right: 1rem;
+  margin-right: 3rem;
   color: #707070;
   text-transform: uppercase;
   position: relative;
@@ -420,9 +423,10 @@ main .more a:hover {
   width: 15px;
   content: "";
   position: absolute;
-  background-color: #CE4334;
   margin-top: -15px;
   border-radius: 25px;
+  background-color: #fff;
+  border: 2px solid #CE4334;
   left: 50%;
   margin-left: -7.5px;
   bottom: -30px;
@@ -444,6 +448,7 @@ main .more a:hover {
 }
 .slider .cycle-pager a.cycle-pager-active:after {
   bottom: -21px;
+  background-color: #CE4334;
   opacity: 1;
 }
 
