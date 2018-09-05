@@ -56,7 +56,7 @@
             </div>
         </header>
         <main>
-            <div class="container">
+            <div class="container mb-40 mt-40">
                 <div class="row">
                     <div class="col-md-6">
                         <h4>Sabemos que quanto mais frascos e caixas, mais lixo.</h4>
@@ -67,39 +67,77 @@
                 </div>
             </div>
             <section class="lista-de-produtos">
-                <nav class="menu-horizontal">
-                    <button>cabelo</button>
-                    <button>maõs</button>
-                    <button>pés</button>
-                    <button>corpo</button>
-                    <button>rosto</button>
-                    <button>todos</button>
-                    <hr>
-                </nav>
+                <div class="container filters">
+                    <div class="row">
+                        <div class="col-md-offset-3">
+                            <nav class="menu-horizontal button-group" data-filter-group="corpo">
+                                <button data-filter=".cabelo">cabelo</button>
+                                <button data-filter=".maos">maõs</button>
+                                <button data-filter=".pes">pés</button>
+                                <button data-filter=".corpo">corpo</button>
+                                <button data-filter=".rosto">rosto</button>
+                                <button class="is-checked" data-filter="*">todos</button>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <hr>
                 <div class="container mt-40">
                     <h4>Ou filtre pelo elemento natural</h4>
                     <div class="row col-nm">
-                        <div class="col-md-3">
-                            <nav class="menu-vertical">
-                                <button>cabelo</button>
-                                <button>maõs</button>
-                                <button>pés</button>
-                                <button>corpo</button>
-                                <button>rosto</button>
-                                <button>todos</button>
-                                <button>todos</button>
-                                <button>todos</button>
+                        <div class="col-md-3 filters">
+                            <nav class="menu-vertical button-group" data-filter-group="elemento-natural">
+                                <button class="is-checked" data-filter="*">todos</button>
+                                <button data-filter=".babartimao">Babartimão</button>
+                                <button data-filter=".pequi">Pequi</button>
+                                <button data-filter=".Maracuja">Maracujá</button>
+                                <button data-filter=".urucum">Urucum</button>
+                                <button data-filter=".buriti">Buriti</button>
+                                <button data-filter=".aloevera">Aloe-vera</button>
+                                <button data-filter=".cacau">Cacau</button>
                             </nav>
                         </div>
                         <div class="col-md-9">
                             <div class="row">
-                                <div class="produto-card col-sm-4 col-np">
-                                    <figure>
-                                        <img src="images/produto-5.jpg" alt="">
-                                        <figcaption>Gel e creme pós sol</figcaption>
-                                    </figure>
-                                    <div class="card-content">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+                                <div class="grid">
+                                    <div class="produto-card col-sm-4 col-np cabelo urucum">
+                                        <a href="#">
+                                            <div class="card-container">
+                                                <figure>
+                                                    <img src="images/produto-5.jpg" alt="">
+                                                    <figcaption>Gel e creme pós sol</figcaption>
+                                                </figure>
+                                                <div class="card-content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="produto-card col-sm-4 col-np maos pequi">
+                                        <a href="#">
+                                            <div class="card-container">
+                                                <figure>
+                                                    <img src="images/produto-5.jpg" alt="">
+                                                    <figcaption>Gel e creme pós sol</figcaption>
+                                                </figure>
+                                                <div class="card-content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="produto-card col-sm-4 col-np pes buriti">
+                                        <a href="#">
+                                            <div class="card-container">
+                                                <figure>
+                                                    <img src="images/produto-5.jpg" alt="">
+                                                    <figcaption>Gel e creme pós sol</figcaption>
+                                                </figure>
+                                                <div class="card-content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. </p>
+                                                </div>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -153,6 +191,7 @@
         </footer>
     </div>
     <script src="js/libs/jquery-3.3.1.min.js"></script>
-    <script src="js/libs/jquery.cycle2.min.js"></script>
+    <script src="js/libs/isotope.pkgd.min.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
