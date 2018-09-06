@@ -5,7 +5,7 @@
 
 //estilos para o header
 header {
-    
+    position: relative;
     .upper-header {
         height: 90px;
         display: flex;
@@ -97,11 +97,15 @@ header {
         nav {
             text-align: center;
             margin-top: 15px;
+            position: relative;
             a {
                 color: #E8D4D4;
                 font-family: 'Lato', sans-serif;
                 text-transform: uppercase;
                 margin-left: 2rem;
+                &:focus {
+                    text-decoration: none;
+                }
             }
         }
         .hero {
@@ -128,6 +132,18 @@ header {
                 animation-duration: 2s;
                 animation-iteration-count: infinite;
             }
+        }
+        &:before {
+            height: 100%;
+            width: 100%;
+            content: "";
+            position: absolute;
+            display: block;
+            opacity: 0.1;
+            background-image: url(../images/Fibonacci_spiral.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            transform: rotateY(180deg);
         }
         
     }

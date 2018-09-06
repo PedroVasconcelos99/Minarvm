@@ -78,6 +78,9 @@ body, html {
   background-color: #397209;
 }
 
+header {
+  position: relative;
+}
 header .upper-header {
   height: 90px;
   display: flex;
@@ -161,12 +164,16 @@ header.home {
 header.home nav {
   text-align: center;
   margin-top: 15px;
+  position: relative;
 }
 header.home nav a {
   color: #E8D4D4;
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin-left: 2rem;
+}
+header.home nav a:focus {
+  text-decoration: none;
 }
 header.home .hero p {
   font-family: "Lora", serif;
@@ -189,6 +196,18 @@ header.home .arrow div {
   animation: bounce;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+}
+header.home:before {
+  height: 100%;
+  width: 100%;
+  content: "";
+  position: absolute;
+  display: block;
+  opacity: 0.1;
+  background-image: url(../images/Fibonacci_spiral.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: rotateY(180deg);
 }
 
 @keyframes bounce {
