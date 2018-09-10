@@ -94,6 +94,7 @@ header {
     &.home {
         color: #fff;
         font-family: 'Lato', sans-serif;
+        height: 100vh;
         nav {
             text-align: center;
             margin-top: 15px;
@@ -120,7 +121,9 @@ header {
         .arrow {
             display: flex;
             justify-content: center;
-            margin-bottom: 60px;
+            position: absolute;
+            width: 100%;
+            bottom: 56px;
             div {
                 width: 80px;
                 height: 80px;
@@ -265,8 +268,6 @@ main {
             margin-bottom: 1rem;
         }
         .img-circle {
-            width: 350px;
-            height: 350px;
             display: block;
             margin: auto;
         }
@@ -384,7 +385,6 @@ main {
                 position: absolute;
                 display: block;
                 top: 50%;
-                background-color: $bg2;
                 transform: rotate(45deg);
                 margin-top: -15px;
             }
@@ -418,8 +418,38 @@ main {
             .col-nm.row {
                 display: flex;
             }
+            
+        }
+        &.bg2{
             .bg-color {
                 background: $bg2;
+            }
+            .left,.right {
+                &:after{
+                    background-color: $bg2;
+                }
+
+            }
+        }  
+        &.bg3{
+            .bg-color {
+                background: $bg3;
+            }
+            .left,.right {
+
+                &:after {
+                    background-color: $bg3;
+                }
+            }
+        }  
+        &.bg4{
+            .bg-color {
+                background: $bg4;
+            }
+            .left,.right {
+                &:after{
+                    background-color: $bg4;
+                }
             }
         }  
     }
@@ -440,11 +470,21 @@ main {
     }
     .cycle-pager {
         text-align: center;
+        @media (max-width: $xs-min) {
+            overflow-x: scroll;
+            display: flex;
+            a {
+                &:after {
+                    display: none;
+                }
+            }
+        }
         a {
             margin-right: 3rem;
             color: #707070;
             text-transform: uppercase;
             position: relative;
+            white-space: nowrap;
             &:after {
                 height: 15px;
                 width: 15px;
@@ -512,6 +552,7 @@ main {
             text-transform: uppercase;
             margin-right: 2.5rem;
             position: relative;
+            white-space: nowrap;
             &:after {
                 height: 15px;
                 width: 15px;
@@ -541,7 +582,19 @@ main {
                 }
             }
         }
-
+        @media (max-width: $xs-min) {
+            display: flex;
+            overflow-x: scroll;
+            button {
+                margin-right: 1.5rem;
+                &:after {
+                    display: none;
+                }
+                &.is-checked {
+                    color: #CE4334;
+                }
+            }
+        }
     }
     .menu-vertical {
         display: flex;

@@ -1,3 +1,5 @@
+//scripts para o plugin isotope
+//**************************************************************************
 
 // init Isotope
 var $grid = $('.grid').isotope({
@@ -37,3 +39,23 @@ function concatValues( obj ) {
   }
   return value;
 }
+
+
+//fim dos scripts para o isotope************************************************************
+
+
+
+//scripts para o efeito de scroll da home
+
+$('.arrow a').click(
+  function(event) {
+
+    event.preventDefault();
+
+    var target = $('#produtos');
+  
+    $('html, body').animate({
+        scrollTop: target.offset().top
+    }, 1000)
+  }
+);
