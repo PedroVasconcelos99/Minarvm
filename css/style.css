@@ -543,7 +543,7 @@ main .more a:hover {
 }
 .lista-de-produtos .menu-horizontal button {
   text-transform: uppercase;
-  margin-right: 3rem;
+  margin-right: 2.5rem;
   position: relative;
 }
 .lista-de-produtos .menu-horizontal button:after {
